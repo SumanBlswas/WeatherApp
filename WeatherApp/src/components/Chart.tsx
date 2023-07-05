@@ -1,9 +1,21 @@
 import { useRef, useEffect } from "react";
 import { Chart, registerables } from "chart.js";
+import { useAppDispatch, useAppSelector } from "../redux/store";
+import { getAPiWeather } from "../redux/weather/weather.action";
 
-const Bar: React.FC = () => {
+const Bar = ({ targetPlace }: { targetPlace: string }) => {
   const chartContainer = useRef<HTMLCanvasElement>(null);
   const chartInstanceRef = useRef<Chart | null>(null);
+  const dispatch = useAppDispatch();
+
+  const weather = useAppSelector(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (store: any) => store.weatherReducer?.weather[`hourly?city=${targetPlace}`]
+  );
+
+  useEffect(() => {
+    dispatch(getAPiWeather(`/forecast/hourly?city=${targetPlace}`));
+  }, [dispatch, targetPlace]);
 
   useEffect(() => {
     if (chartContainer.current) {
@@ -11,13 +23,20 @@ const Bar: React.FC = () => {
 
       const chartContext = chartContainer.current.getContext("2d");
 
+      const tempArray = weather && [
+        Math.round(weather[7].temp),
+        Math.round(weather[11].temp),
+        Math.round(weather[15].temp),
+        Math.round(weather[19].temp),
+      ];
+
       if (chartContext) {
         const data = {
           labels: ["Morning", "Afternoon", "Evening", "Night"],
           datasets: [
             {
               label: "Temperature",
-              data: [20, 34, 28, 22],
+              data: tempArray,
               backgroundColor: "red",
               borderColor: "transparent",
               borderWidth: 0,
@@ -64,7 +83,7 @@ const Bar: React.FC = () => {
         });
       }
     }
-  }, []);
+  }, [weather]);
 
   return (
     <div
