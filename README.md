@@ -36,7 +36,7 @@
 
 ![Weatheroo](https://github.com/SumanBlswas/WeatherApp/assets/112753516/5cc0c5ff-a188-4ea3-a39f-ccef0626a333)
 
-## Our Learnings
+## My Learnings
 
 On this journey, I faced many issues, but I keep motivated myself with patience.
 
