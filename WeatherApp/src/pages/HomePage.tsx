@@ -9,7 +9,7 @@ const HomePage = ({
   targetPlace: string;
 }) => {
   return (
-    <div className={"h-full"}>
+    <div className={"h-full flex flex-col justify-around pb-7 md:pb-6"}>
       <Navbar2 setTargetPlace={setTargetPlace} />
       <WeatherReport targetPlace={targetPlace} />
     </div>

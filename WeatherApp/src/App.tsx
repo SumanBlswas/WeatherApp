@@ -12,14 +12,18 @@ function App() {
 
   return (
     <>
-      <div className={"flex place-items-center justify-between h-screen gap-3"}>
-        <div className={"w-1/12 h-full"}>
+      <div
+        className={
+          "flex flex-col sm:flex-row place-items-center justify-between sm:justify-around h-full md:h-screen gap-3 mt-5 md:mt-0"
+        }
+      >
+        <div className="md:block md:w-1/12 md:h-full">
           <Navbar />
         </div>
-        <div className={"w-8/12 h-full mr-3"}>
+        <div className={"md:w-8/12 h-full mr-0 md:mr-3 md:h-full"}>
           <HomePage setTargetPlace={setTargetPlace} targetPlace={targetPlace} />
         </div>
-        <div className={"w-3/12 h-full"}>
+        <div className={"hidden md:block md:w-3/12 md:h-full"}>
           <Selection targetPlace={targetPlace} />
         </div>
       </div>

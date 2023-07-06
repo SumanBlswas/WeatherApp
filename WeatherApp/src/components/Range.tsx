@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const AirQualityRange = ({ weather }: { weather: any }) => {
   const [value, setValue] = useState(weather && weather[0].aqi);
+  console.log(value);
 
   const handleChange = (e: any) => {
     setValue(parseInt(e.target.value));
@@ -26,7 +27,7 @@ const AirQualityRange = ({ weather }: { weather: any }) => {
       <div className="w-full h-2 bg-gray-300 rounded-md mt-2">
         <div
           className={`h-full rounded-md ${
-            value <= 25
+            weather && weather[0].aqi <= 25
               ? "bg-green-400"
               : value <= 50
               ? "bg-yellow-400"
@@ -34,7 +35,7 @@ const AirQualityRange = ({ weather }: { weather: any }) => {
               ? "bg-orange-400"
               : "bg-red-400"
           }`}
-          style={{ width: `${value}%` }}
+          style={{ width: `${weather && weather[0].aqi}%` }}
         ></div>
       </div>
       <div className="mt-2 hidden">
