@@ -1,6 +1,6 @@
 # Welcome to Weatheroo
 
-<h3>Weatheroo is a Weather Forecast App. This is a single Project Construct Week Within 3 Days. You can Check temp, humadity, wind-Speed, AQI etc.
+<h3>Weatheroo is a Weather Forecast App. This is a single Project Constructed Within 3 Days. You can Check temp, humidity, wind-Speed, AQI, etc.
 </h3>
 
 # Deployed URL 👉 [Click here](https://weatheroo.vercel.app/)
@@ -38,15 +38,15 @@
 
 ## Our Learnings
 
-On this journey I faced many issues, but I keep motivated myself with patience.
+On this journey, I faced many issues, but I keep motivated myself with patience.
 
-- I learned how to read and understand Api's with more clarity.
+- I learned how to read and understand Apis with more clarity.
 
 - I learned how to write more efficient and clean code.
 
 - Even though I also learned how to plan a project and how to execute it step by step.
 
-- Igith also got a glimpse of using GitHub for the version control.
+- Igith also got a glimpse of using GitHub for version control.
 
 Source Code(GitHub link):- [https://github.com/SumanBlswas/spicy-yak-7891](https://github.com/SumanBlswas/WeatherApp)
 
