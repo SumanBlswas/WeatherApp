@@ -5,7 +5,7 @@
 
 # Deployed URL 👉 [Click here](https://weatheroo.vercel.app/)
 
-## Our Team Members
+## Member
 
 - Suman Biswas(Team Leader) (My Linkedin profile :- https://www.linkedin.com/in/suman-biswas-158022248/)
 
