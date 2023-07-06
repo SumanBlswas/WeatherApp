@@ -1,4 +1,4 @@
-# Welcome to StyloZone
+# Welcome to Weatheroo
 
 <h3>Weatheroo is a Weather Forecast App. This is a single Project Construct Week Within 3 Days. You can Check temp, humadity, wind-Speed, AQI etc.
 </h3>
