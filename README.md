@@ -34,7 +34,7 @@
 
 ## Home Page :
 
-![Weatheroo](https://github.com/SumanBlswas/WeatherApp/assets/112753516/5cc0c5ff-a188-4ea3-a39f-ccef0626a333)
+![Weatheroo](https://github.com/SumanBlswas/WeatherApp/assets/112753516/145d14fc-0229-4d17-9b96-5c226bfa2d90)
 
 ## My Learnings
 
